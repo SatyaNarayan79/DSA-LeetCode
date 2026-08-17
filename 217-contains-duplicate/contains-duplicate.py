@@ -6,6 +6,6 @@ class Solution:
         for i in range(0,n):
             if nums[i] in my_set:
                 return True
-            else:
-                my_set.add(nums[i])    
+            
+            my_set.add(nums[i])    
         return False    
