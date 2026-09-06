@@ -1,7 +1,7 @@
 class Solution:
     def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
         n=len(nums)
-        smaller = float('inf')
+        
         temp = 0
         result = []
         for i in range(0,n):
