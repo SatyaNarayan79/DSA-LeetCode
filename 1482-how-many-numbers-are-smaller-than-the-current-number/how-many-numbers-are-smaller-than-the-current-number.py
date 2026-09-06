@@ -2,7 +2,6 @@ class Solution:
     def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
         n=len(nums)
         
-        temp = 0
         result = []
         for i in range(0,n):
             count = 0
@@ -10,7 +9,7 @@ class Solution:
                 if nums[i] > nums[j]:
                     count+=1
                 
-            temp = count 
-            result.append(temp) 
+                              
+            result.append(count) 
         return result    
 
