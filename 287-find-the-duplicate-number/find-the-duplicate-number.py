@@ -1,7 +1,11 @@
 class Solution:
     def findDuplicate(self, nums: list[int]) -> int:
         n = len(nums)
-        nums.sort()
+        fz_map = dict()
+       # mapping 
         for i in range(0,n):
-            if nums[i] == nums[i+1]:
+            if nums[i] in fz_map:
                 return nums[i]
+
+            else:
+                fz_map[nums[i]] = 1
